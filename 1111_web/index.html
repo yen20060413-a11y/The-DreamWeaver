@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>織夢空間 - 葉語心 - 個人作品集</title>
+  <meta name="description" content="織夢空間 - 葉語心個人作品集，平面設計、廣告創意與立體展演作品展示。">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 一、頂部導覽列 -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="#home" class="navbar__brand">織夢空間 | 葉語心</a>
+      <nav class="navbar__menu">
+        <a href="#home" class="navbar__link">Home</a>
+        <a href="#about" class="navbar__link">About</a>
+        <a href="#portfolio" class="navbar__link">Portfolio</a>
+        <a href="#contact" class="navbar__link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 二、首頁主視覺影片 -->
+    <section class="hero" id="home">
+      <div class="hero__frame">
+        <div class="hero__video-wrap">
+          <video
+            class="hero__video"
+            autoplay
+            muted
+            loop
+            playsinline
+            poster="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=1600&q=80"
+          >
+            <source src="https://videos.pexels.com/video-files/5427146/5427146-uhd_2560_1440_25fps.mp4" type="video/mp4">
+          </video>
+          <div class="hero__overlay"></div>
+          <h1 class="hero__title">織夢空間 - 葉語心 - 個人作品集</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- About 簡述 -->
+    <section class="about" id="about">
+      <div class="about__inner">
+        <p class="about__label">About / 關於我</p>
+        <p class="about__text">
+          以手繪與數位交織的創作方式，探索平面、廣告與立體展演的視覺語言。
+          相信少即是多，在留白之間讓作品自行呼吸。
+        </p>
+      </div>
+    </section>
+
+    <!-- 三、三張照片輪播 -->
+    <section class="portfolio" id="portfolio">
+      <div class="portfolio__header">
+        <h2 class="portfolio__title">Featured Works / 精選作品展示</h2>
+      </div>
+
+      <div class="carousel">
+        <div class="carousel__track" id="carouselTrack">
+          <article class="carousel__card" data-index="0">
+            <div class="carousel__card-inner">
+              <img
+                src="imgs/1776950068117.jpg"
+                alt="平面設計 - 品牌製作，桌遊與卡牌設計作品"
+                loading="lazy"
+              >
+              <div class="carousel__caption">
+                <span class="carousel__category">平面設計</span>
+                <span class="carousel__desc">品牌製作 · 桌遊與卡牌設計</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="carousel__card carousel__card--active" data-index="1">
+            <div class="carousel__card-inner">
+              <img
+                src="imgs/IMG_20240119_102044.jpg"
+                alt="廣告設計 - 創意發想，手繪企劃草稿作品"
+                loading="lazy"
+              >
+              <div class="carousel__caption">
+                <span class="carousel__category">廣告設計</span>
+                <span class="carousel__desc">創意發想 · 手繪企劃草稿</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="carousel__card" data-index="2">
+            <div class="carousel__card-inner">
+              <img
+                src="imgs/1776950190130.jpg"
+                alt="作品展示 - 立體展演模型作品"
+                loading="lazy"
+              >
+              <div class="carousel__caption">
+                <span class="carousel__category">作品展示</span>
+                <span class="carousel__desc">立體展演 · 模型作品</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="carousel__controls">
+          <button class="carousel__arrow carousel__arrow--prev" id="carouselPrev" aria-label="上一張">‹</button>
+          <button class="carousel__arrow carousel__arrow--next" id="carouselNext" aria-label="下一張">›</button>
+        </div>
+
+        <div class="carousel__progress" id="carouselProgress">
+          <button class="progress-item progress-item--active" data-slide="0" aria-label="第 1 張">
+            <span class="progress-item__num">01</span>
+            <span class="progress-item__line"></span>
+          </button>
+          <button class="progress-item" data-slide="1" aria-label="第 2 張">
+            <span class="progress-item__num">02</span>
+            <span class="progress-item__line"></span>
+          </button>
+          <button class="progress-item" data-slide="2" aria-label="第 3 張">
+            <span class="progress-item__num">03</span>
+            <span class="progress-item__line"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 四、底部聯絡方式與版權 -->
+  <footer class="footer" id="contact">
+    <div class="footer__inner">
+      <div class="footer__contact">
+        <p class="footer__phone">聯絡資訊：09xx-xxx-xxx</p>
+        <p class="footer__email">Email：<a href="mailto:yuxin.yee@email.com">yuxin.yee@email.com</a></p>
+      </div>
+      <div class="footer__social">
+        <a href="https://www.behance.net" target="_blank" rel="noopener noreferrer">Behance</a>
+        <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">Pinterest</a>
+        <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer">Dribbble</a>
+      </div>
+    </div>
+    <p class="footer__copyright">© 2026 葉語心. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
